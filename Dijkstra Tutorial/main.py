@@ -15,4 +15,4 @@ for line in fileinput.input():
 	add_edge(g,u,v,w)
 	add_edge(g,v,u,w)               #undirected graph, edges go both ways
 	
-print graphs.dijkstra(g,1,5)        #from wikipedia
+print graphs.bidirectional_dijkstra(g,1,5,undirected=True)        #from wikipedia

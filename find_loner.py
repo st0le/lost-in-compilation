@@ -1,4 +1,4 @@
-import random,pprint
+import random
 
 def random_array(sz,lo=10,hi=100):
     return map(lambda _:random.randint(lo,hi),xrange(sz))
@@ -7,6 +7,10 @@ arr = set(random_array(5))
 key = arr.pop()
 arr = list(arr) + list(arr) + list(arr) + [key]
 random.shuffle(arr)
+
+def find_loner2(arr):
+    ones = twos = 0
+    for v in arr:
 
 def find_loner(arr):
     mx = max(arr)
